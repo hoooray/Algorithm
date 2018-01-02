@@ -1,9 +1,8 @@
-def count(list):
-    if len(list) == 1:
+def count(arr):
+    if len(arr) == 1:
         return 1
-    else:
-        return 1 + count(list[1:])
+    return 1 + count(arr[1:])
 
-my_list = [1,3,5,7,9]
+MYLIST = [1, 3, 5, 7, 9]
 
-print count(my_list)
+print count(MYLIST)

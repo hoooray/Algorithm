@@ -1,10 +1,10 @@
-def binary_search(list, item):
+def binary_search(arr, item):
     low = 0
-    high = len(list)-1
+    high = len(arr)-1
 
     while low <= high:
         mid = (low + high) // 2 # // is round, / is divided by
-        guess = list[mid]
+        guess = arr[mid]
         if guess == item:
             return mid
         if guess > item:
@@ -13,6 +13,6 @@ def binary_search(list, item):
             low = mid + 1
     return None
 
-my_list = [1,3,5,7,9]
+MYLIST = [1, 3, 5, 7, 9]
 
-print binary_search(my_list, 3)
+print binary_search(MYLIST, 3)
